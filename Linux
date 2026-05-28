@@ -33,7 +33,7 @@ mkdir aula-terraform && cd aula-terraform
 
 Crie um arquivo chamado main.tf (você pode usar o editor do terminal como nano main.tf ou abrir a pasta no VS Code) e cole o código da VM dentro dele.
 
-Nota: O antigo Passo 3 (Variáveis de Ambiente/PATH) foi removido, pois no Linux o comando do VirtualBox já se configura sozinho!
+
 
 🚀 Passo 3: Executando o Fluxo do Terraform
 No terminal, certifique-se de que está dentro da pasta onde o main.tf foi criado.
