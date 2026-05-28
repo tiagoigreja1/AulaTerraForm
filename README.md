@@ -3,7 +3,7 @@ Passo 1: Preparação do Ambiente (Instalação)
 Os alunos precisarão de duas ferramentas instaladas na máquina:
 
 1. Instalar o VirtualBox
-Baixar e instalar a versão mais recente para o sistema operacional correspondente no site oficial: virtualbox.org.
+Baixar e instalar a versão mais recente para o sistema operacional correspondente no site oficial: [virtualbox.org.](https://www.virtualbox.org/wiki/Downloads)
 
 
 2. Instalar o Terraform
