@@ -6,11 +6,13 @@ Passo 1: Preparação do Ambiente (Instalação)
 Baixar e instalar a versão mais recente para o sistema operacional correspondente no site oficial: [virtualbox.org.](https://www.virtualbox.org/wiki/Downloads)
 
 
-2. Instalar o Terraform
+2. Instalar o Terraform via CMD:
+
+   
 winget install HashiCorp.Terraform
 
 
-validar terraform -v
+Para validar se instalou: terraform -v
 
 💻 Passo 2: O Código do Terraform (A Prática).
 Crie uma pasta vazia para a aula (ex: aula-terraform). Dentro dela, crie um arquivo chamado main.tf.
@@ -29,24 +31,30 @@ C:\Program Files\Oracle\VirtualBox
 
 Clique em OK em todas as janelas para salvar.
 
-🚀 Passo 4: Executando o Fluxo do Terraform (O "Show")
-Aqui está o coração da aula prática. Explique o ciclo de vida do Terraform rodando os comandos abaixo no terminal, dentro da pasta do projeto:
+🚀 Passo 4: Executando o Fluxo do Terraform
 
-1. Inicialização (terraform init)
+Entrar no CMD entrar na pasta que o main.tf foi criado.
+
+1. Inicialização
+
+De o comando:    terraform init
 Este comando lê o arquivo main.tf, descobre que você precisa do provedor do VirtualBox e faz o download dele.
 
-Bash
 
 terraform init
 
-2. Planejamento (terraform plan)
+2. Planejamento
+
+De o comando:   terraform plan
 O Terraform analisa o que você tem na máquina (nada) e o que está no código (1 VM) e mostra o planejamento do que será feito. É a rede de segurança do DevOps.
 
-Bash
+
 terraform plan
 
-3. Aplicação (terraform apply)
+3. Aplicação 
+
+De o comando:  terraform apply
+
+Quando pedir digite YES
 
 
-Bash
-terraform apply
