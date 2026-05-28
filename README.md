@@ -14,7 +14,9 @@ winget install HashiCorp.Terraform
 
 Para validar se instalou: terraform -v
 
-💻 Passo 2: O Código do Terraform (A Prática).
+💻 Passo 2: O Código do Terraform 
+
+
 Crie uma pasta vazia para a aula (ex: aula-terraform). Dentro dela, crie um arquivo chamado main.tf.
 
 Dentro do main cole o código.
