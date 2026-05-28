@@ -1,0 +1,60 @@
+🛠️ Passo 1: Preparação do Ambiente (Instalação)
+
+
+Instalar o VirtualBox
+
+
+No Linux, instalamos o VirtualBox direto pelo terminal:
+
+
+sudo apt update && sudo apt install -y virtualbox
+
+
+Instalar o Terraform
+
+Cole o bloco de comandos abaixo no terminal para adicionar o repositório oficial da HashiCorp e instalar o Terraform:
+
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl && \
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg && \
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com/packages/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list && \
+sudo apt-get update && sudo apt-get install terraform
+Para validar se instalou:
+
+
+terraform -v
+
+
+💻 Passo 2: O Código do Terraform
+
+Abra o terminal e crie uma pasta para a aula, entrando nela em seguida:
+
+
+mkdir aula-terraform && cd aula-terraform
+
+Crie um arquivo chamado main.tf (você pode usar o editor do terminal como nano main.tf ou abrir a pasta no VS Code) e cole o código da VM dentro dele.
+
+Nota: O antigo Passo 3 (Variáveis de Ambiente/PATH) foi removido, pois no Linux o comando do VirtualBox já se configura sozinho!
+
+🚀 Passo 3: Executando o Fluxo do Terraform
+No terminal, certifique-se de que está dentro da pasta onde o main.tf foi criado.
+
+Inicialização
+Dê o comando: terraform init
+
+Este comando lê o arquivo main.tf, descobre que você precisa do provedor do VirtualBox e faz o download dele.
+
+
+terraform init
+Planejamento
+Dê o comando: terraform plan
+
+O Terraform analisa o que você tem na máquina (nada) e o que está no código (1 VM) e mostra o planejamento do que será feito. É a rede de segurança do DevOps.
+
+
+terraform plan
+Aplicação
+Dê o comando: terraform apply
+
+
+terraform apply
+Quando o terminal parar e perguntar, digite yes e aperte Enter.
